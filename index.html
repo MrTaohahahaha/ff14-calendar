@@ -3,16 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FF14 国服战场日历</title>
+<title>FF14战场日历 · 今日战场与轮换时刻表｜陶欧@银泪湖</title>
+<meta name="description" content="陶欧@银泪湖制作的FF14国服战场日历：查询今日战场地图、每月战场轮换和下一次切换时间，按北京时间每天23:00更新，支持手机和电脑。">
+<meta name="author" content="陶欧@银泪湖">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://mrtaohahahaha.github.io/ff14-calendar/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="FF14战场日历 · 今日战场与轮换时刻表｜陶欧@银泪湖">
+<meta property="og:description" content="陶欧@银泪湖制作的FF14国服战场日历：查询今日战场地图、每月战场轮换和下一次切换时间，按北京时间每天23:00更新，支持手机和电脑。">
+<meta property="og:url" content="https://mrtaohahahaha.github.io/ff14-calendar/">
+<meta property="og:site_name" content="陶欧的FF14战场日历">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"FF14国服战场日历","url":"https://mrtaohahahaha.github.io/ff14-calendar/","inLanguage":"zh-CN","description":"陶欧@银泪湖制作的FF14国服战场日历：查询今日战场地图、每月战场轮换和下一次切换时间，按北京时间每天23:00更新，支持手机和电脑。","applicationCategory":"UtilitiesApplication","operatingSystem":"支持 JavaScript 的现代浏览器","isAccessibleForFree":true,"author":{"@type":"Person","name":"陶欧@银泪湖"},"about":{"@type":"Thing","name":"最终幻想XIV（FF14）国服纷争前线"}}</script>
 <style>
 :root{color-scheme:dark;font-family:"Microsoft YaHei",system-ui,sans-serif;color:#e9edf4;background:#10151c}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#24394a,transparent 65%);min-height:100vh}main{max-width:1100px;margin:auto;padding:40px 24px}header,.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.kicker{color:#c6b683;font-size:12px;letter-spacing:3px}h1{font-size:26px;margin:10px 0 26px}.badge{font-size:12px;color:#b3c5d0;border:1px solid #3a4d5c;border-radius:30px;padding:8px 14px}.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:28px;border:1px solid #455568;border-radius:20px;padding:30px;background:linear-gradient(110deg,#263645,#18232e);margin-bottom:26px}.label{font-size:13px;color:#acbdcc}.name{font-size:clamp(36px,6vw,56px);font-weight:700;margin:12px 0}.sub{font-size:13px;color:#a8b8ca;line-height:1.8}.metrics{display:flex;flex-direction:column;justify-content:center;gap:18px}.value{font-size:19px;margin-top:6px;font-variant-numeric:tabular-nums}.count{color:#ecd49b}.panel{background:#151e29;border:1px solid #2e3e50;border-radius:18px;padding:24px}h2{font-size:22px;margin:0}button{font:inherit;cursor:pointer;background:#233345;color:#e5edf5;border:1px solid #42576b;border-radius:8px;padding:9px 13px}button:hover{background:#344b61}button:focus-visible{outline:2px solid #f0d399;outline-offset:3px}.controls{display:flex;gap:6px}.grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px}.week{text-align:center;color:#8fa5b9;padding:12px;font-size:12px}.day{min-height:96px;background:#1b2937;border-radius:9px;border:1px solid transparent;padding:10px;display:flex;flex-direction:column;gap:14px;cursor:pointer;text-align:left}.day.today{border-color:#ddc78e}.day.selected{background:#314457;box-shadow:inset 0 0 0 1px #9ab1ca}.day.out{opacity:.45}.date{display:flex;justify-content:space-between;font-size:13px}.tag{font-size:10px;color:#e7d39c}.map{color:var(--color);font-size:13px;font-weight:600;line-height:1.5}.detail{background:#1e2d3c;border-radius:10px;padding:16px;margin-top:18px;line-height:1.9;font-size:14px}.legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px;font-size:12px}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--color);margin-right:6px}footer{font-size:12px;color:#91a3b5;line-height:1.9;margin:22px 2px}summary{cursor:pointer}details p{margin:8px 0}.download{font-size:12px;margin-top:14px}noscript{display:block;color:#ffbc98;padding:20px}@media(max-width:620px){main{padding:22px 10px}.hero{grid-template-columns:1fr;padding:22px;gap:12px}.metrics{display:grid;grid-template-columns:1fr 1fr}.metrics>div:first-child{grid-column:1/-1}.panel{padding:14px 8px}.grid{gap:3px}.day{padding:7px 3px;min-height:80px;gap:12px}.map{font-size:11px;word-break:break-all}.week{padding:10px 0}.bar{gap:10px}h2{font-size:20px}button{padding:8px 10px;font-size:12px}.value{font-size:16px}.badge{margin-bottom:14px}}
 </style>
 </head>
 <body><main>
-<header><div><div class="kicker">纷争前线 · 每日轮换</div><h1>FF14 国服战场日历</h1></div><span class="badge">北京时间 · 手机 / 电脑</span></header>
+<header><div><div class="kicker">纷争前线 · 每日轮换</div><h1>FF14 国服战场日历</h1><p class="sub" style="margin:-14px 0 22px">陶欧@银泪湖 制作 · 今日战场 / 战场轮换时刻表</p></div><span class="badge">北京时间 · 手机 / 电脑</span></header>
 <noscript>请使用已启用 JavaScript 的 Edge、Chrome、Firefox 或 Safari 打开此文件。</noscript>
 <section class="hero" aria-label="当前战场"><div><div class="label">当前开放</div><div class="name" id="current">正在计算…</div><div class="sub" id="period"></div></div><div class="metrics"><div><div class="label">北京时间</div><div class="value" id="clock"></div></div><div><div class="label">距下次轮换</div><div class="value count" id="count"></div></div><div><div class="label">下一战场</div><div class="value" id="nextMap"></div></div></div></section>
 <section class="panel"><div class="bar"><h2 id="month" aria-live="polite"></h2><div class="controls"><button id="prev" aria-label="上个月">‹ 上月</button><button id="home">回到今天</button><button id="next" aria-label="下个月">下月 ›</button></div></div><p class="sub">每晚 23:00 轮换。日历显示当天 23:00 前的地图；点击日期可查看切换前后安排。</p><div id="grid" class="grid" aria-label="战场月历"></div><div id="detail" class="detail" aria-live="polite"></div><div class="legend" id="legend"></div></section>
+<section class="panel" style="margin-top:22px;line-height:1.9" aria-labelledby="guide-title">
+<h2 id="guide-title">FF14今日战场怎么查？</h2>
+<p>这份FF14国服战场日历由<strong>陶欧@银泪湖</strong>制作，用于查询纷争前线的今日战场、战场轮换日历和切换时刻。页面顶部显示当前开放地图、下一战场及倒计时；月历可查看其他日期。</p>
+<h3>战场几点换图？</h3>
+<p>本日历按北京时间每天23:00切换地图，不按电脑所在时区或零点换图。月历格显示该日00:00至22:59的地图；点击日期可查看23:00前后的安排。这里的战场时刻指地图轮换时间，不代表匹配队列的实际开场时间。</p>
+<h3>国服战场按什么顺序轮换？</h3>
+<p>八天循环依次为：尘封秘岩 → 阵地战 → 大草原 → 沃克其特 → 尘封秘岩 → 碎冰战 → 大草原 → 沃克其特。两个尘封秘岩分别衔接阵地战和碎冰战。</p>
+<h3>日历依据是什么？</h3>
+<p>采用玩家确认的国服轮换规则，以北京时间2026年10月30日23:00前的阵地战为基准推算。本站是玩家制作的非官方工具；若游戏版本改变轮换规则，应以游戏内任务信息为准。请确保设备系统时间准确。</p>
+<h3>手机能用吗？</h3>
+<p>可以直接用手机或电脑浏览器打开本页网址，无需登录。QQ内显示异常时，可选择在系统浏览器中打开。当前地图由浏览器实时计算，搜索结果摘要可能不是实时状态，请进入页面确认。</p>
+</section>
 <footer><p style="color:#e8cc8a;font-size:14px;margin:0 0 10px">作者：陶欧@银泪湖</p>分享本页网址，即可在手机或电脑浏览器查看。若 QQ 内无法正常显示，请选择在浏览器中打开。时间取自电脑系统时钟。<details><summary>查看轮换规则</summary><p>尘封秘岩 → 阵地战 → 大草原 → 沃克其特 → 尘封秘岩 → 碎冰战 → 大草原 → 沃克其特。</p><p>基准：北京时间2026年10月30日23:00前为阵地战。采用用户确认的国服规则；游戏轮换调整后需更新文件。</p></details><button class="download" id="save">下载离线 HTML</button><span id="saveStatus" role="status"></span></footer>
 </main>
 <script>
