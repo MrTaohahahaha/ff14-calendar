@@ -13,7 +13,7 @@
 <noscript>请使用已启用 JavaScript 的 Edge、Chrome、Firefox 或 Safari 打开此文件。</noscript>
 <section class="hero" aria-label="当前战场"><div><div class="label">当前开放</div><div class="name" id="current">正在计算…</div><div class="sub" id="period"></div></div><div class="metrics"><div><div class="label">北京时间</div><div class="value" id="clock"></div></div><div><div class="label">距下次轮换</div><div class="value count" id="count"></div></div><div><div class="label">下一战场</div><div class="value" id="nextMap"></div></div></div></section>
 <section class="panel"><div class="bar"><h2 id="month" aria-live="polite"></h2><div class="controls"><button id="prev" aria-label="上个月">‹ 上月</button><button id="home">回到今天</button><button id="next" aria-label="下个月">下月 ›</button></div></div><p class="sub">每晚 23:00 轮换。日历显示当天 23:00 前的地图；点击日期可查看切换前后安排。</p><div id="grid" class="grid" aria-label="战场月历"></div><div id="detail" class="detail" aria-live="polite"></div><div class="legend" id="legend"></div></section>
-<footer>分享本页网址，即可在手机或电脑浏览器查看。若 QQ 内无法正常显示，请选择在浏览器中打开。时间取自电脑系统时钟。<details><summary>查看轮换规则</summary><p>尘封秘岩 → 阵地战 → 大草原 → 沃克其特 → 尘封秘岩 → 碎冰战 → 大草原 → 沃克其特。</p><p>基准：北京时间2026年10月30日23:00前为阵地战。采用用户确认的国服规则；游戏轮换调整后需更新文件。</p></details><button class="download" id="save">下载离线 HTML</button><span id="saveStatus" role="status"></span></footer>
+<footer><p style="color:#e8cc8a;font-size:14px;margin:0 0 10px">作者：陶欧@银泪湖</p>分享本页网址，即可在手机或电脑浏览器查看。若 QQ 内无法正常显示，请选择在浏览器中打开。时间取自电脑系统时钟。<details><summary>查看轮换规则</summary><p>尘封秘岩 → 阵地战 → 大草原 → 沃克其特 → 尘封秘岩 → 碎冰战 → 大草原 → 沃克其特。</p><p>基准：北京时间2026年10月30日23:00前为阵地战。采用用户确认的国服规则；游戏轮换调整后需更新文件。</p></details><button class="download" id="save">下载离线 HTML</button><span id="saveStatus" role="status"></span></footer>
 </main>
 <script>
 'use strict';
@@ -36,3 +36,4 @@ const cleanDocument='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
 $('save').onclick=()=>{const blob=new Blob([cleanDocument],{type:'text/html;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='FF14-calendar.html';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);$('saveStatus').textContent=' 已请求浏览器保存文件，请查看下载列表。'};
 render();tick();setInterval(tick,1000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick()});window.addEventListener('focus',tick);window.addEventListener('pageshow',tick);
 </script></body></html>
+
